@@ -22,8 +22,8 @@ emailregx = re.compile(r'''
 #copy text off clipboard
 paste = pyperclip.paste()
 #extract email and phone number
-phone = phoneregx.findall(paste)
-email = emailregx.findall(paste)
+phone = phoneregx.findall(paste) #scrape telephone numbers
+email = emailregx.findall(paste) #scrape email ID
 
 allphone = []
 for i in phone:
